@@ -25,12 +25,12 @@ class Application
       end
     end
 
-  elsif req.path.match(/add/)
-    if @@items.include?(item)
-      @@cart << item
-      else
-        resp.write "We don't have that item"
-    end
+  # elsif req.path.match(/add/)
+  #   if @@items.include?(item)
+  #     @@cart << item
+  #     else
+  #       resp.write "We don't have that item"
+  #   end
   end
 
     elsif req.path.match(/search/)
