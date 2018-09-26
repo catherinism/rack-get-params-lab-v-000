@@ -18,6 +18,7 @@ class Application
     else @@cart.each do |c|
         resp.write "#{c}\n"
       end
+    end
 
 
 
