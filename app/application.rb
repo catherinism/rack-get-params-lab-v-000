@@ -45,10 +45,5 @@ class Application
     end
   end
 
-  def add(item)
-    new_item = @@items.include?(item)
-    @@cart << new_item
-  end
-
 
 end
