@@ -23,8 +23,8 @@ class Application
         @@cart.each do |c|
           resp.write "#{c}\n"
       end
-    end
-
+  #   end
+  #
   # elsif req.path.match(/add/)
   #   if @@items.include?(item)
   #     @@cart << item
