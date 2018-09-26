@@ -21,7 +21,7 @@ class Application
     end
 
   elsif req.path.match(/add/)
-    resp.write add(item)
+    if resp.write add(item)
   else
     resp.write "We don't have that item"
     end
