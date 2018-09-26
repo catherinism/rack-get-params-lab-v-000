@@ -21,7 +21,7 @@ class Application
     end
 
   elsif req.path.match(/add/)
-    if add_item = @@items.find {|i| i.include?}
+    if add_item = @@items.include?
     @@cart << add_item
   else
     resp.write "We don't have that item"
