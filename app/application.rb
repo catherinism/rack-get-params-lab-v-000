@@ -20,6 +20,12 @@ class Application
       end
     end
 
+  elsif req.path.match(/add/)
+    if add_item = @@items.find {|i| i.include?}
+    @@cart << add_item
+  else
+    resp.write "We don't have that item"
+    end
 
 
     elsif req.path.match(/search/)
